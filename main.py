@@ -277,15 +277,19 @@ def main():
     for video in videos:
         print(video)
 
-    plname = input('Please input your new target playlist name')
-
-    pldescription = input('Please input the description of your new playlist')
-
-    plist = youtube.create_new_playlist(plname, pldescription)
+    print("Creat A New PlayList? [Y]/N")
+    ch = input()
+    if ch.lower() == 'n':
+        plist = input('Please input you playlist id\n')
+    else:
+        plname = input('Please input your new target playlist name\n')
+        pldescription = input(
+            'Please input the description of your new playlist\n')
+        plist = youtube.create_new_playlist(plname, pldescription)
 
     for video in videos:
         youtube.add_video_to_playlist(plist, video)
-
+        
     print("All Done")
     print("Failed Tracks")
     for track in failed:
