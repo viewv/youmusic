@@ -10,6 +10,8 @@ googleapiclient
 oauth2client
 ```
 
+Read [this](https://developers.google.com/docs/api/quickstart/python) to use google python api.
+
 ### Usage
 
 #### Step 1
