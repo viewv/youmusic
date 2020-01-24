@@ -1,12 +1,13 @@
 # youmusic
-A simple python program that transfer your csv music playlist to YouTube
+A simple python3 program that transfer your csv music playlist to YouTube.
 
 ### Dependence
 
 ```python
+pandas
 argparse
 configparser
-googleapiclient
+googleapiclient # google api
 oauth2client
 ```
 
