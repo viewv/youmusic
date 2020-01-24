@@ -277,9 +277,9 @@ def main():
     for video in videos:
         print(video)
 
-    plname = input('Please input your new target playlist')
+    plname = input('Please input your new target playlist name')
 
-    pldescription = input('Please description of your new playlist')
+    pldescription = input('Please input the description of your new playlist')
 
     plist = youtube.create_new_playlist(plname, pldescription)
 
